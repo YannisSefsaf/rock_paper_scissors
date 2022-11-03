@@ -79,9 +79,9 @@ function displayRoundResult(playerSelection, computerSelection) {
       playerSelection[0].toUpperCase() + playerSelection.slice(1).toLowerCase()
     }`;
   } else if (isWinningPlay(playerSelection, computerSelection)) {
-    roundResult.textContent = `You won! ${computerSelection} beats ${
+    roundResult.textContent = `You won! ${
       playerSelection[0].toUpperCase() + playerSelection.slice(1).toLowerCase()
-    }`;
+    } beats ${computerSelection}`;
   } else if (isLosingPlay(playerSelection, computerSelection)) {
     roundResult.textContent = `You lost! ${computerSelection} beats ${
       playerSelection[0].toUpperCase() + playerSelection.slice(1).toLowerCase()
