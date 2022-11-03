@@ -5,7 +5,7 @@ let scoreComputer = 0;
 
 // QUERY SELECTORS //
 const options = document.querySelectorAll(".option");
-const startGame = document.querySelector(".start__game");
+const resetGame = document.querySelector(".start__game");
 const showPlayerScore = document.querySelector(".player__score");
 const showComputerScore = document.querySelector(".computer__score");
 const roundResult = document.querySelector(".round__result");
@@ -22,11 +22,12 @@ options.forEach((option) => {
   });
 });
 
-startGame.addEventListener("click", function (e) {
+resetGame.addEventListener("click", function (e) {
   scorePlayer = 0;
   scoreComputer = 0;
   keepScore(scorePlayer, scoreComputer);
   result.innerText = "";
+  roundResult.innerText = "";
 });
 
 playto.addEventListener("click", (e) => {
