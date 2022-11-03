@@ -4,9 +4,35 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Document</title>
   </head>
   <body>
+    <div>
+      <h1>Welcome To Rock, Paper, Scissors!</h1>
+      <div class="container">
+        <button class="start__game">Reset Game</button>
+      </div>
+      <div class="select">
+        Play to:
+        <select name="playto" id="playto">
+          <option value="3" class="playto">3</option>
+          <option value="5" class="playto">5</option>
+          <option value="10" class="playto">10</option>
+        </select>
+      </div>
+      <h2 class="score">
+        Player score: <span class="player__score"></span> - Computer score:
+        <span class="computer__score"></span>
+      </h2>
+      <p class="round__result"></p>
+      <div class="container">
+        <button class="option">Rock</button>
+        <button class="option">Paper</button>
+        <button class="option">Scissors</button>
+      </div>
+      <div><h1 class="result"></h1></div>
+    </div>
     <script src="javascript.js"></script>
   </body>
 </html>
